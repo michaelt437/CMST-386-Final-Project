@@ -1,0 +1,20 @@
+.posttext {
+    float: left;
+    width: 500px;
+    text-align: justify;
+    margin-top: 0px;
+    padding-left: 7px;
+}
+
+
+#block h1 {
+    color: #000;
+}
+
+#block img { 
+    float: left;
+}
+
+.hrbot {
+    clear: both;
+}

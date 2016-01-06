@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+     <meta name="description" content="Contact form.">
+    <meta name="author" content="Michael Tran">
+    <meta name="keywords" content="technology, innovation, big ideas, mobile phones, gadgets, tablets, household, interior design, wearable tech" >
+<link rel=stylesheet href=CSS/main.css>
+<link rel="stylesheet" href="CSS/page.css">
+<link rel="stylesheet" href="CSS/contact.css">
+<title>Final Project - Michael Tran - Contact</title>
+    
+<script type="text/javascript">
+    
+    
+    function validateForm() {
+        
+        var oops = "You forgot these fields! \n\n";
+        
+        var fname = document.forms["contact"]["fname"].value;
+        
+        if(fname == null || fname == ""){
+            
+         oops += "First name\n";   
+            
+        }
+        
+        var lname = document.forms["contact"]["lname"].value;
+        
+        if(lname == null || lname ==""){
+            
+         oops += "Last name\n";   
+            
+        }
+        
+        var email = document.forms["contact"]["email"].value;
+        
+        if(email == null || email == ""){
+            
+            
+            oops += "Email Address\n";
+            
+        }
+        
+        var comment = document.forms["contact"]["comments"].value;
+        
+        if(comment == null || comment == ""){
+            
+            oops += "Your inquiry\n";
+        }
+        
+     
+        
+        
+        if(oops != "You forgot these fields! \n\n"){
+            alert(oops);
+            return false;
+        }
+        else{
+            return true;
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    </script>    
+    
+    
+</head>
+    
+<body>
+
+<nav>
+    <ul>
+        <li><a href=index.html>Home</a></li>
+        <li><a href=bigideas.html>Big Ideas</a></li>
+       
+        <li><a  href=tiny.html>Tiny Tech</a>
+            <ul>
+                <li><a href=gadgets.html>Gadgets</a></li>
+                <li><a href=phones.html>Phones</a></li>
+                <li><a href=tablets.html>Tablets</a></li>
+            </ul>
+        </li>
+        <li><a href=wearable.html>Wearable</a></li>
+        <li><a href=household.html>Household</a>
+            
+        </li>
+        <li><a  href=about.html>About Us</a></li>
+        <li><a class=active href=contact.html>Contact</a></li>
+        <li><a href=faq.html>FAQ</a></li>
+        <li><a href=ref.html>References</a></li>
+    </ul>
+</nav>
+
+<div id=outer>
+
+    <div id=inner>
+        
+        <div id=slide>
+            <img id=header src="IMG/slider/slide4.jpg" alt="slide 4"> 
+            <div id=pgtitle>
+                <p >Contact Me</p>
+            </div>
+        </div>
+        
+        
+        <div id=content>
+        
+            <div id=block>
+                <h1>Questions or comments? Send me a note.</h1>
+                <hr>
+                
+                
+                
+                
+                
+               
+                <div class=post>
+                    
+                    <div id=form>
+                    
+                        <form name=contact onsubmit="return validateForm()" action="thanks.html">
+                        <fieldset>
+                            <legend>Personal Info</legend>
+                            <label for="fname">
+                            First name:
+                            <span class="red">*</span>
+                            <input tabindex=1 id="fname" type="text" autocomplete="off" autofocus="" size="35" name="fname">
+                        </label>
+                            <br>
+                        <label for="lname">
+                            Last name:
+                            <span class="red">*</span>
+                            <input tabindex=2 id="lname" type="text" autocomplete="off" autofocus="" size="35" name="lname">
+                        </label>
+                            
+                            <br>
+                            
+                            <label for="email">
+                                Email Address:
+                                <span class="red">*</span>
+                                <input tabindex=3 id="email" type="email" autocomplete="off" size="35" name="email">
+                            </label>
+                            
+                            <br>
+                            
+                            <div id="sex">
+                            Gender:
+                                <label>
+                                    <input tabindex=4 id="m" type="radio" value="m" name="sex">
+                                    Male
+                                </label>
+                             <label>
+                                    <input tabindex=5 id="f" type="radio" value="f" name="sex">
+                                    Female
+                                </label>
+                            
+                            </div>
+                            
+                            
+                            
+                            </fieldset>
+                            
+                        <div id="inquiry">
+                        <fieldset>
+                            
+                            <legend>Inquiry<span class=red>*</span></legend>
+                            <label id="hb">
+                                I'm feeling:
+                            
+                            </label>
+                            <select id="listbox" size="4" multiple="multiple" name="emo">
+                                <option>Happy</option>
+                                <option>Sad</option>
+                                <option>Angry</option>
+                                <option>Excited!</option>
+                          
+                            </select>
+                            
+                           
+                            
+                            <div id="txtarea">
+                            <textarea tabindex=6 id="commentbox" cols="43" rows="10" name="comments"></textarea>
+                            
+                            
+                            
+                            
+                            </div>
+
+                            
+                            
+                            
+                            </fieldset>
+                        
+                            </div>
+                            
+                            <br>
+                            
+                            <div id="buttons">
+                            <button value="submit" type="submit">Submit form</button>
+                            <button value="reset" type="reset">Reset form</button>
+                            </div>
+                        
+                        </form>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <hr>
+               
+                
+            
+                
+               
+                
+              
+                
+                
+            </div>
+            
+            <div id=related>
+                
+                <h2>Related Articles</h2>
+                
+                <div id=relcontainer>
+                    
+                
+                    <div class=relpost>
+                        <a href="household/bottle.html">
+                            <img src="IMG/related/opener.jpg" alt="opener">
+                            <div class=reltitle>
+                                <h3>New bottle opener does not look like a bottle opener</h3>
+                            </div>
+                                              
+                        </a>
+                    </div>
+
+
+
+                    <div class=relpost>
+                        <a href="#">
+                            <img src="IMG/related/box.jpg" alt="box">
+                            <div class=reltitle>
+                                <h3>Organize your wires, and make your desktop look fresh</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                   
+
+                    <div class=relpost>
+                        <a href="#">
+                            <img src="IMG/related/3d.jpg" alt="3d">
+                            <div class=reltitle>
+                                <h3>Apple patents new 3D space mapping from Primesense </h3>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+            </div>
+        
+            <footer>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href=bigideas.html>Big Ideas</a></li>
+                    <li><a href=tiny.html>Tiny Tech</a></li>
+                    <li><a href=wearable.html>Wearable</a></li>
+                    <li><a href=household.html>Household</a></li>
+                    <li><a href=about.html>About Us</a></li>
+                    <li><a href=faq.html>FAQ</a></li>
+                    <li><a href=privacy.html>Privacy Policy</a></li>
+                    <li><a href=ref.html>References</a></li>
+                    <li><a href=sitemap.xml>Sitemap</a></li>
+                    <li><a href=http://validator.w3.org/check?uri=http%3A%2F%2Fnova.umuc.edu%2F~ct386c29%2FFinal%2Fcontact.html&charset=%28detect+automatically%29&doctype=Inline&group=0&user-agent=W3C_Validator%2F1.3+http%3A%2F%2Fvalidator.w3.org%2Fservices>HTML</a></li>
+                    <li><a href=http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F~ct386c29%2FFinal%2Fcontact.html&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en>CSS</a></li>
+                    
+                </ul>
+            </footer>
+            
+            
+            
+        </div>
+        
+        
+
+	
+
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>

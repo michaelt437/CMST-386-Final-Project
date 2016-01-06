@@ -1,0 +1,20 @@
+#slide {
+    height: 150px;
+    overflow: hidden; 
+}
+
+#header {
+    position: absolute;
+
+}
+
+#pgtitle{
+    font-size: 90px;
+    height: 80px;
+    top: -20px;
+}
+
+#pgtitle p {
+    top: -15px;
+    
+}
